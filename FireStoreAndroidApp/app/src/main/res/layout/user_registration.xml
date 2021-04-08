@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".User_Login">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="20dp"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/useremail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:hint="Email" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text=" Male"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="   Female"
+                android:textSize="20dp" />
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/userdob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:hint="DOB" />
+
+
+        <EditText
+            android:id="@+id/usercity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="20dp"
+            android:hint="City" />
+
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/userpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="20dp"
+            android:hint="Password" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="40dp"
+            android:text="Register" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already Have ?"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Login"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+
